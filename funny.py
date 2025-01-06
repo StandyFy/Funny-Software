@@ -1,8 +1,11 @@
-import pygetwindow as oeriujgsedoighjrjghrdsoigjhsreiok; import pyautogui; from time import sleep as sdoilrgjosrdihjgseiogseoipgjwsepiogjseiojgsigjsejikogji; 
+import pygetwindow
+import pyautogui
+from time import sleep
+
 while 1: 
-    isuehfiwshjhfbnewshijfhsehf = oeriujgsedoighjrjghrdsoigjhsreiok.getActiveWindow()
-    if isuehfiwshjhfbnewshijfhsehf:
-            oWSIUEHFIKEJSHFWSEIUHFWSIOEFHJSEOIFHSIOEFHJSEOI, iukhfsiujhfseijfhesfheufhseikjfhsejikfhesujikfhesjifhesj = isuehfiwshjhfbnewshijfhsehf.left, isuehfiwshjhfbnewshijfhsehf.top
-            isuehfiwshjhfbnewshijfhsehf.restore()
-    isuehfiwshjhfbnewshijfhsehf.moveTo(oWSIUEHFIKEJSHFWSEIUHFWSIOEFHJSEOIFHSIOEFHJSEOI-10, iukhfsiujhfseijfhesfheufhseikjfhsejikfhesujikfhesjifhesj)
-    sdoilrgjosrdihjgseiogseoipgjwsepiogjseiojgsigjsejikogji(.1)
+        active_window = pygetwindow.getActiveWindow()
+        if active_window:
+                left, top = active_window.left, active_window.top
+                active_window.restore()
+                active_window.moveTo(left - 10, top)
+        sleep(0.1)
